@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 import itertools
 
-# ==================== 24点求解核心（与之前一致） ====================
 class ExprNode:
     def __init__(self, op=None, value=None, children=None):
         self.op = op
@@ -125,7 +124,6 @@ def find_all_solutions(nums):
 
     return sorted(solutions)
 
-# ==================== GUI 部分（修正后） ====================
 class App:
     def __init__(self, root):
         self.root = root
